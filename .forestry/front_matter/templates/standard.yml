@@ -22,3 +22,5 @@ fields:
   default: []
   label: categories
   description: Categories for post
+pages:
+- posts/new-test-post.md
