@@ -22,5 +22,15 @@ fields:
   default: []
   label: categories
   description: Categories for post
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: content
+  description: content for post
 pages:
 - posts/new-test-post.md
