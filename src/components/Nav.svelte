@@ -20,19 +20,23 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item {segment === undefined ? 'active' : ''}">
         <a class="nav-link" href=".">
-          Home
+          home
           <span class="sr-only">(current)</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about">About</a>
+        <a class="nav-link {segment === 'about' ? 'active' : ''}" href="about">
+          about
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="blog">Blog</a>
+        <a class="nav-link {segment === 'blog' ? 'active' : ''}" href="blog">
+          blog
+        </a>
       </li>
     </ul>
-    <span class="navbar-text white-text">The journal of my mind</span>
+    <span class="navbar-text white-text">mi journal es tu journal</span>
   </div>
 </nav>
