@@ -37,6 +37,8 @@
         </a>
       </li>
     </ul>
-    <span class="navbar-text white-text">mi journal es tu journal</span>
+    <span class="navbar-text white-text">
+      @tianaspurlock &nbsp; @thesnackqueenrd &nbsp; @tianamakesandbakes
+    </span>
   </div>
 </nav>
