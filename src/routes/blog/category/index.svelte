@@ -1,6 +1,6 @@
 <script context="module">
   export function preload({ params, query }) {
-    return this.fetch(`blog.json`)
+    return this.fetch(`blog/category.json`)
       .then(r => r.json())
       .then(posts => {
         return { posts };
@@ -32,9 +32,7 @@
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
     <li>
-      <a rel="prefetch" href="blog/{post.slug}">
-        {post.categories}{post.title}
-      </a>
+      <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
     </li>
   {/each}
 </ul>
