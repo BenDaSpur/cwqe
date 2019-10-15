@@ -23,5 +23,6 @@ fields:
   label: categories
   description: Categories for post
 pages:
-- posts/new-test-post.md
+- posts/test-of-dankness.md
 - posts/ci-cd-works.md
+- posts/new-test-post.md
