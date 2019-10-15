@@ -33,4 +33,5 @@ fields:
   label: content
   description: content for post
 pages:
+- posts/ci-cd-works.md
 - posts/new-test-post.md
