@@ -23,5 +23,5 @@ fields:
   label: categories
   description: Categories for post
 pages:
-- posts/ci-cd-works.md
 - posts/new-test-post.md
+- posts/ci-cd-works.md
