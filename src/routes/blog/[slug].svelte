@@ -60,5 +60,20 @@
 <h1>{post.title}</h1>
 
 <div class="content">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <span class="float-md-left">
+        {@html post.date.substring(0, post.date.indexOf('T'))}
+      </span>
+    </div>
+    <div class="col-md-6 text-center">
+      <span class="float-md-right">
+        Categories:
+        {@html post.categories}
+      </span>
+    </div>
+  </div>
+  <p />
+
   {@html post.html}
 </div>
