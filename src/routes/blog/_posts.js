@@ -13,8 +13,8 @@ const cwd = process.cwd();
 
 const posts = getMarkDowninDirectory(path.join(cwd, "posts/"));
 posts.forEach(post => {
-  // console.log(post);
-  post.content = post.content.replace(/^\t{3}/gm, "");
+  // console.log(post.html);
+  post.html = post.html.replace(/^\t{3}/gm, "");
 });
 
 export default posts;
