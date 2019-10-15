@@ -1,5 +1,6 @@
 ---
-categories: []
+categories:
+- Dank
 title: Test of dankness
 date: 2019-10-15T06:00:00Z
 
