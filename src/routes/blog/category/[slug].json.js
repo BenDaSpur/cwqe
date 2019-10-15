@@ -2,13 +2,24 @@ import posts from "./_posts.js";
 
 const lookup = new Map();
 posts.forEach(post => {
-  lookup.set(post.slug, JSON.stringify(post));
+  var cats = JSON.stringify(post.categories).split(",");
+
+  cats.forEach(cat => {
+    cat = cat
+      .replace(/"/g, "")
+      .replace("[", "")
+      .replace("]", "");
+
+    lookup.set(cat, JSON.stringify(post));
+  });
+  // lookup.set(, JSON.stringify(post));
 });
 
 export function get(req, res, next) {
   // the `slug` parameter is available because
   // this file is called [slug].json.js
   const { slug } = req.params;
+  console.log(lookup.has(slug));
 
   if (lookup.has(slug)) {
     res.writeHead(200, {

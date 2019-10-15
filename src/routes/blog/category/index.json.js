@@ -5,7 +5,7 @@ const contents = JSON.stringify(
     return {
       title: post.title,
       slug: post.slug,
-      categories: post.categories
+      cat: post.categories
     };
   })
 );
