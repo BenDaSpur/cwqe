@@ -2,16 +2,19 @@ import posts from "./_posts.js";
 
 const lookup = new Map();
 posts.forEach(post => {
-  var cats = JSON.stringify(post.categories).split(",");
+  var cats = JSON.stringify(post.categories);
+  if (!cats == undefined) {
+    cats = cats.split(",");
+    cats.forEach(cat => {
+      cat = cat
+        .replace(/"/g, "")
+        .replace("[", "")
+        .replace("]", "");
 
-  cats.forEach(cat => {
-    cat = cat
-      .replace(/"/g, "")
-      .replace("[", "")
-      .replace("]", "");
+      lookup.set(cat, JSON.stringify(post));
+    });
+  }
 
-    lookup.set(cat, JSON.stringify(post));
-  });
   // lookup.set(, JSON.stringify(post));
 });
 
