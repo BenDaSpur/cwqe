@@ -1,4 +1,10 @@
 ---
 label: Home Page
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+  description: title to welcome people
