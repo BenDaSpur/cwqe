@@ -7,7 +7,7 @@
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-light indigo">
-  <a class="navbar-brand" href=".">tiana makes &amp; bakes</a>
+  <a class="navbar-brand" href=".">tianaspurlock.com</a>
   <button
     class="navbar-toggler"
     type="button"

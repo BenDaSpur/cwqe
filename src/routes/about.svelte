@@ -1,7 +1,11 @@
+<script>
+
+</script>
+
 <svelte:head>
-	<title>About</title>
+  <title>About Me</title>
 </svelte:head>
-
-<h1>About this site</h1>
-
-<p>This is the 'about' page. There's not much here.</p>
+<div class="container">
+  <p>My name is Tiana. That is all you need to know</p>
+</div>
+<!-- <h1>Tiana Makes &amp; Bakes</h1> -->
