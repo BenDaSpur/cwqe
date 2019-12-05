@@ -2,7 +2,7 @@
   export async function preload({ params, query }) {
     // the `slug` parameter is available because
     // this file is called [slug].svelte
-    const res = await this.fetch(`blog/${params.slug}.json`);
+    const res = await this.fetch(`recipes/${params.slug}.json`);
     const data = await res.json();
 
     if (res.status === 200) {
@@ -15,6 +15,7 @@
 
 <script>
   export let post;
+  console.log(post);
 </script>
 
 <style>
@@ -69,8 +70,17 @@
     <div class="col-md-6 text-center">
       <span class="float-md-right">
         Categories:
-        {@html post.categories}
+        <a href="/recipes/categories/">
+          {@html post.categories}
+        </a>
       </span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <a href="/author/ben">
+        <span class="float-md-left">{post.author}</span>
+      </a>
     </div>
   </div>
   <p />

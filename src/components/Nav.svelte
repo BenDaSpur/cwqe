@@ -7,7 +7,7 @@
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-light indigo">
-  <a class="navbar-brand" href=".">tianaspurlock.com</a>
+  <a class="navbar-brand" href=".">Cooking With QE</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -32,13 +32,15 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link {segment === 'blog' ? 'active' : ''}" href="blog">
-          blog
+        <a
+          class="nav-link {segment === 'recipes' ? 'active' : ''}"
+          href="recipes">
+          recipes
         </a>
       </li>
     </ul>
     <span class="navbar-text white-text">
-      @tianaspurlock &nbsp; @thesnackqueenrd &nbsp; @tianamakesandbakes
+      <!-- @tianaspurlock &nbsp; @thesnackqueenrd &nbsp; @tianamakesandbakes -->
     </span>
   </div>
 </nav>

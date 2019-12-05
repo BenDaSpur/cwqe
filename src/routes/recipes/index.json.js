@@ -5,7 +5,8 @@ const contents = JSON.stringify(
     return {
       title: post.title,
       slug: post.slug,
-      categories: post.categories
+      categories: post.categories,
+      short: post.html.substr(0, 280).replace(/<[^>]*>?/gm, "")
     };
   })
 );
