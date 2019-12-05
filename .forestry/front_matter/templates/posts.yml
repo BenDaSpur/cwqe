@@ -16,3 +16,5 @@ fields:
   default: []
   label: Author
   description: Author(s)
+pages:
+- posts/ci-cd-works.md
