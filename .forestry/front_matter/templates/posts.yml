@@ -17,4 +17,5 @@ fields:
   label: Author
   description: Author(s)
 pages:
+- authors/ben-spurlock.md
 - posts/ci-cd-works.md
