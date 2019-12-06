@@ -1,53 +1,38 @@
 <script>
   export let segment;
+  import Button from "sveltestrap/src/Button.svelte";
+  import Nav from "sveltestrap/src/Nav.svelte";
+  import Navbar from "sveltestrap/src/Navbar.svelte";
+  import NavItem from "sveltestrap/src/NavItem.svelte";
+  import NavLink from "sveltestrap/src/NavLink.svelte";
+  import Container from "sveltestrap/src/Container.svelte";
 </script>
 
 <style>
 
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-light indigo">
-  <a class="navbar-brand" href=".">Cooking With QE</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarText"
-    aria-controls="navbarText"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" />
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item {segment === undefined ? 'active' : ''}">
-        <a class="nav-link" href=".">
-          home
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link {segment === 'about' ? 'active' : ''}" href="about">
-          about
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link {segment === 'authors' ? 'active' : ''}"
-          href="authors">
-          authors
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link {segment === 'recipes' ? 'active' : ''}"
-          href="recipes">
-          recipes
-        </a>
-      </li>
-    </ul>
-    <span class="navbar-text white-text">
-      <!-- @tianaspurlock &nbsp; @thesnackqueenrd &nbsp; @tianamakesandbakes -->
-    </span>
-  </div>
-</nav>
+<Navbar color="light" light>
+  <Nav centered>
+    <NavItem>
+      <NavLink class={segment === undefined ? 'active' : ''} href="/">
+        Home
+      </NavLink>
+    </NavItem>
+    <NavItem>
+      <NavLink class={segment === 'about' ? 'active' : ''} href="about">
+        About
+      </NavLink>
+    </NavItem>
+    <NavItem>
+      <NavLink class={segment === 'authors' ? 'active' : ''} href="authors">
+        Authors
+      </NavLink>
+    </NavItem>
+    <NavItem>
+      <NavLink class={segment === 'recipes' ? 'active' : ''} href="recipes">
+        Recipes
+      </NavLink>
+    </NavItem>
+  </Nav>
+</Navbar>
