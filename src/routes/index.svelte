@@ -8,4 +8,5 @@
 <div class="container">
   <h1>Cooking with Quality Engineers</h1>
   <p>I hope you enjoy your stay!!!</p>
+  <p>More to come with recipes and podcasts!</p>
 </div>
