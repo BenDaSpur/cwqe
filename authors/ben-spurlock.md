@@ -1,5 +1,6 @@
 ---
-author: []
+author:
+- Ben Spurlock
 categories: []
 title: Ben Spurlock
 date: 
