@@ -33,6 +33,13 @@
       </li>
       <li class="nav-item">
         <a
+          class="nav-link {segment === 'authors' ? 'active' : ''}"
+          href="authors">
+          authors
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
           class="nav-link {segment === 'recipes' ? 'active' : ''}"
           href="recipes">
           recipes
