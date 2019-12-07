@@ -12,6 +12,6 @@
 
 <Nav {segment} />
 
-<Container>
+<Container class="my-5">
   <slot />
 </Container>

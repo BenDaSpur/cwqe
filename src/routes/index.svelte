@@ -1,11 +1,32 @@
-<script>
-
+<script context="module">
+  export function preload({ params, query }) {
+    return this.fetch(`/home/_home.json`)
+      .then(r => r.json())
+      .then(posts => {
+        return { posts };
+      });
+  }
 </script>
 
+<script>
+  export let posts;
+  console.log(posts);
+  import Col from "sveltestrap/src/Col.svelte";
+  import Row from "sveltestrap/src/Row.svelte";
+</script>
+
+<style>
+
+</style>
+
 <svelte:head>
-  <title>CWQE</title>
+  <title>Blog</title>
 </svelte:head>
-<div class="container">
-  <h1>Cooking with Quality Engineers</h1>
-  <p>More to come with recipes among other things!</p>
-</div>
+
+<Row>
+  <h1>{posts.title}</h1>
+</Row>
+
+<Row>
+  {@html posts.html}
+</Row>

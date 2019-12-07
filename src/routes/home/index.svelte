@@ -1,6 +1,6 @@
 <script context="module">
   export function preload({ params, query }) {
-    return this.fetch(`about.json`)
+    return this.fetch(`home.json`)
       .then(r => r.json())
       .then(posts => {
         return { posts };
@@ -21,10 +21,6 @@
 <svelte:head>
   <title>Blog</title>
 </svelte:head>
-
-<Row>
-  <h1>{posts[0].title}</h1>
-</Row>
 
 <Row>
   {@html posts[0].short}
