@@ -1,10 +1,11 @@
 ---
 author:
-  - Ben Spurlock
+- Ben Spurlock
 categories: []
-title: Ben Spurlock
-date:
----
-Hey my name is Ben Spurlock. I do testing occasionally.
+title: What is this about?
+date: 
 
-![](/IMG_7002-Edit-1.jpg)
+---
+## What is a recipe?
+
+On this site we have recipes for engineering departments to thrive AND we have actual recipes because we consider ourselves lovers of cooking and trying new food!
