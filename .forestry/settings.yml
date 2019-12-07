@@ -5,13 +5,11 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
-  path: src/routes/_home/home.md
+  path: src/routes/_home/_home.md
   label: Home Page
-  match: "**/*"
 - type: document
-  path: src/routes/about/about.md
+  path: src/routes/about/_about.md
   label: About Page
-  match: "**/*"
 - type: directory
   path: authors
   label: Authors
