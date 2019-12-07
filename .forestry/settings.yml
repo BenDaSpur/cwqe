@@ -4,6 +4,14 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: document
+  path: src/routes/_home/home.md
+  label: Home Page
+  match: "**/*"
+- type: document
+  path: src/routes/about/about.md
+  label: About Page
+  match: "**/*"
 - type: directory
   path: authors
   label: Authors
