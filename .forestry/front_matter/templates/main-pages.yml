@@ -7,4 +7,3 @@ fields:
   label: title
 pages:
 - src/routes/about/_about.md
-- src/routes/_home/_home.md
