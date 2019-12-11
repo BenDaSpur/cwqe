@@ -5,7 +5,7 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
-  path: src/routes/_home/home.md
+  path: src/routes/home/_home.md
   label: Home Page
 - type: document
   path: src/routes/about/_about.md
