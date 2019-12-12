@@ -24,5 +24,4 @@ fields:
   description: A picture of you!
 pages:
 - authors/ben-spurlock.md
-- authors/test-person.md
 - posts/ci-cd-works.md
