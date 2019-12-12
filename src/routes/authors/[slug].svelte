@@ -15,7 +15,8 @@
 
 <script>
   export let post;
-  console.log(post);
+  import Col from "sveltestrap/src/Col.svelte";
+  import Row from "sveltestrap/src/Row.svelte";
 </script>
 
 <style>
@@ -29,5 +30,12 @@
 <h1>{post.title}</h1>
 
 <div class="content">
-  {@html post.html}
+  <Row>
+    <Col>
+      {@html post.html}
+    </Col>
+    <Col>
+      <img src={post.picture} alt="picture of author" />
+    </Col>
+  </Row>
 </div>
