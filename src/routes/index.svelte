@@ -10,7 +10,6 @@
 
 <script>
   export let posts;
-  console.log(posts);
   import Col from "sveltestrap/src/Col.svelte";
   import Row from "sveltestrap/src/Row.svelte";
 </script>
