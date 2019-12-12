@@ -15,7 +15,9 @@
 
 <script>
   export let post;
-  console.log(post);
+
+  let author = post.author[0];
+  let authorSlug = post.author[1];
 </script>
 
 <style>
@@ -70,16 +72,19 @@
     <div class="col-md-6 text-center">
       <span class="float-md-right">
         Categories:
-        <a href="/recipes/categories/">
-          {@html post.categories}
-        </a>
+        {#each post.categories as cat}
+          <a href="/recipes/categories/{cat}">
+            {@html cat}
+          </a>
+        {/each}
+
       </span>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6 text-center">
-      <a href="/author/ben">
-        <span class="float-md-left">{post.author}</span>
+      <a href="/author/{authorSlug}">
+        <span class="float-md-left">{author}</span>
       </a>
     </div>
   </div>
