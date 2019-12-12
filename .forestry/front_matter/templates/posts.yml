@@ -16,6 +16,12 @@ fields:
   default: []
   label: Author
   description: Author(s)
+- name: picture
+  type: file
+  config:
+    maxSize: 250
+  label: Picture
+  description: A picture of you!
 pages:
 - authors/ben-spurlock.md
 - authors/test-person.md
