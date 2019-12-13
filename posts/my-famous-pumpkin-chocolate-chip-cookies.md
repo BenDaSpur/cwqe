@@ -14,18 +14,18 @@ I accidentally created this recipe while following another recipe and accidental
 
 Recipe:
 
-1 15oz can of pumpkin puree  
-1 Egg  
-1/2 C Vegetable Oil  
-1 C Sugar  
-1 T Vanilla
-
-2 C flour  
-2 tsp baking powder
-2 tsp cinnamon (more to taste)
-1/2 tsp salt
-1 tsp baking soda
-2 C semi-sweet chocolate chips
+> 1 15oz can of pumpkin puree  
+> 1 Egg  
+> 1/2 C Vegetable Oil  
+> 1 C Sugar  
+> 1 T Vanilla
+>
+> 2 C flour  
+> 2 tsp baking powder
+> 2 tsp cinnamon (more to taste)
+> 1/2 tsp salt
+> 1 tsp baking soda
+> 2 C semi-sweet chocolate chips
 
 1. Start oven at 350 degrees
 2. Combine first part (liquids) into medium bowl until well incorporated.
