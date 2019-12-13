@@ -19,7 +19,7 @@ Recipe:
 > 1/2 C Vegetable Oil  
 > 1 C Sugar  
 > 1 T Vanilla
->
+
 > 2 C flour  
 > 2 tsp baking powder
 > 2 tsp cinnamon (more to taste)
