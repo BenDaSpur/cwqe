@@ -12,7 +12,7 @@
 
 </style>
 
-<Navbar color="light" light>
+<Navbar color="dark" dark>
   <Nav centered>
     <NavItem>
       <NavLink class={segment === undefined ? 'active' : ''} href="/">
