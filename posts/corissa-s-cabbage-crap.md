@@ -5,7 +5,7 @@ categories:
 - Sides
 title: Corissa's Cabbage Crap
 date: 2019-12-13T07:00:00Z
-picture: ''
+picture: "/cabbage.jpeg"
 
 ---
 ## Corissa's Cabbage Crap
