@@ -24,6 +24,5 @@ fields:
   description: A picture for the post!
 pages:
 - authors/ben-spurlock.md
-- posts/ci-cd-works.md
 - posts/corissa-s-cabbage-crap.md
 - posts/my-famous-pumpkin-chocolate-chip-cookies.md
