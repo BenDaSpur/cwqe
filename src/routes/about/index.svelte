@@ -23,9 +23,13 @@
 </svelte:head>
 
 <Row>
-  <h1>{posts[0].title}</h1>
+  <Col>
+    <h1>{posts[0].title}</h1>
+  </Col>
 </Row>
 
 <Row>
-  {@html posts[0].short}
+  <Col>
+    {@html posts[0].short}
+  </Col>
 </Row>

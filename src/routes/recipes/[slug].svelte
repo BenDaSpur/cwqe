@@ -96,7 +96,7 @@
       {@html post.html}
     </Col>
     <Col>
-      <img src={post.picture} />
+      <img src={post.picture} class="img-fluid" />
     </Col>
   </Row>
 </div>
