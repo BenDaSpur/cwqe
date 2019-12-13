@@ -18,6 +18,8 @@
 
   let author = post.author[0];
   let authorSlug = post.author[1];
+  import Col from "sveltestrap/src/Col.svelte";
+  import Row from "sveltestrap/src/Row.svelte";
 </script>
 
 <style>
@@ -89,6 +91,12 @@
     </div>
   </div>
   <p />
-
-  {@html post.html}
+  <Row>
+    <Col>
+      {@html post.html}
+    </Col>
+    <Col>
+      <img src={post.picture} />
+    </Col>
+  </Row>
 </div>
