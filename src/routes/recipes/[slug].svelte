@@ -17,7 +17,7 @@
   export let post;
 
   let author = post.author[0];
-  let authorSlug = post.author[1];
+  let authorSlug = post.author[1].toLowerCase();
   import Col from "sveltestrap/src/Col.svelte";
   import Row from "sveltestrap/src/Row.svelte";
 </script>
@@ -85,7 +85,7 @@
   </div>
   <div class="row">
     <div class="col-md-6 text-center">
-      <a href="/author/{authorSlug}">
+      <a href="/authors/{authorSlug}">
         <span class="float-md-left">{author}</span>
       </a>
     </div>
