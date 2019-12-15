@@ -34,7 +34,10 @@
 				waiting for the 'click' event -->
     <li>
       <a rel="prefetch" href="recipes/{post.slug}">{post.title}</a>
-      <p>{post.short}</p>
+      <p>
+        {@html post.short}
+        <a rel="prefetch" href="recipes/{post.slug}">Read More</a>
+      </p>
     </li>
   {/each}
 </ul>
