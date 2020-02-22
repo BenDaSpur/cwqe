@@ -6,7 +6,8 @@ const contents = JSON.stringify(
       title: post.title,
       slug: post.slug,
       categories: post.categories,
-      short: post.html.substr(0, 280)
+      short: post.html.substr(0, 280),
+      img: post.picture
     };
   })
 );

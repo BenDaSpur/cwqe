@@ -13,8 +13,9 @@ const cwd = process.cwd();
 
 const posts = getMarkDowninDirectory(path.join(cwd, "authors/"));
 posts.forEach(post => {
-  // console.log(post.html);
+  // console.log(post.picture);
   post.html = post.html.replace(/^\t{3}/gm, "");
+  post.img = post.picture;
 });
 
 export default posts;
