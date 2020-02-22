@@ -26,12 +26,12 @@
 </style>
 
 <Navbar color="dark" dark expand="md">
-  <NavbarBrand href="/">Cooking with QE</NavbarBrand>
+  <NavbarBrand rel="prefetch" href="/">Cooking with QE</NavbarBrand>
   <NavbarToggler on:click={() => (isOpen = !isOpen)} />
   <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
     <Nav class="ml-auto" navbar>
       <NavItem>
-        <NavLink href="/authors">Authors</NavLink>
+        <NavLink rel="prefetch" href="authors">Authors</NavLink>
       </NavItem>
       <!-- <NavItem>
         <NavLink href="/recipes">Recipes</NavLink>
@@ -39,10 +39,10 @@
       <UncontrolledDropdown nav inNavbar>
         <DropdownToggle nav caret>Recipes</DropdownToggle>
         <DropdownMenu right>
-          <DropdownItem href="/recipes">Technical</DropdownItem>
-          <DropdownItem href="/recipes">Food</DropdownItem>
+          <DropdownItem rel="prefetch" href="recipes">Technical</DropdownItem>
+          <DropdownItem rel="prefetch" href="recipes">Food</DropdownItem>
           <DropdownItem divider />
-          <DropdownItem href="/recipes">All</DropdownItem>
+          <DropdownItem rel="prefetch" href="recipes">All</DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
     </Nav>

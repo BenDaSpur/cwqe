@@ -15,7 +15,7 @@
 
 <script>
   export let post;
-  console.log(post);
+  // console.log(post);
 </script>
 
 <style>

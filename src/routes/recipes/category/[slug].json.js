@@ -22,7 +22,7 @@ export function get(req, res, next) {
   // the `slug` parameter is available because
   // this file is called [slug].json.js
   const { slug } = req.params;
-  console.log(lookup.has(slug));
+  // console.log(lookup.has(slug));
 
   if (lookup.has(slug)) {
     res.writeHead(200, {

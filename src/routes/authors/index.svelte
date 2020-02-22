@@ -21,6 +21,7 @@
   import CardSubtitle from "sveltestrap/src/CardSubtitle.svelte";
   import CardText from "sveltestrap/src/CardText.svelte";
   import CardTitle from "sveltestrap/src/CardTitle.svelte";
+  const color = "primary";
 </script>
 
 <style>
@@ -43,7 +44,7 @@
         <CardSubtitle />
         <CardImg
           src={post.img}
-          class="thumbnail center-block img-responsive"
+          class="thumbnail center-block img-fluid"
           style="max-height:300px; width: inherit !important;" />
         <CardText>
           {@html post.short}
@@ -51,7 +52,9 @@
         <!-- <Button>Button</Button> -->
       </CardBody>
       <CardFooter>
-        <Button rel="prefetch" href="authors/{post.slug}">Read More</Button>
+        <Button {color} rel="prefetch" href="authors/{post.slug}">
+          Read More
+        </Button>
       </CardFooter>
     </Card>
   {/each}

@@ -17,6 +17,8 @@
   export let post;
   import Col from "sveltestrap/src/Col.svelte";
   import Row from "sveltestrap/src/Row.svelte";
+  import Button from "sveltestrap/src/Button.svelte";
+  const color = "primary";
 </script>
 
 <style>
@@ -27,6 +29,8 @@
   <title>{post.title}</title>
 </svelte:head>
 
+<Button outline {color} href="/authors">Back to authors</Button>
+
 <h1>{post.title}</h1>
 
 <div class="content">
@@ -35,7 +39,10 @@
       {@html post.html}
     </Col>
     <Col>
-      <img src={post.picture} alt="picture of author" />
+      <img
+        class="thumbnail center-block img-fluid"
+        src={post.picture}
+        alt="picture of author" />
     </Col>
   </Row>
 </div>
