@@ -95,8 +95,11 @@
     <Col>
       {@html post.html}
     </Col>
-    <Col>
-      <img src={post.picture} class="img-fluid" />
-    </Col>
+    {#if post.picture != ''}
+      <Col>
+        <img src={post.picture} alt="recipe-photo" class="img-fluid" />
+      </Col>
+    {/if}
+
   </Row>
 </div>

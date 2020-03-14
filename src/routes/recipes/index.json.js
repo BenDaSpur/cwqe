@@ -6,6 +6,8 @@ const contents = JSON.stringify(
       title: post.title,
       slug: post.slug,
       categories: post.categories,
+      date: new Date(post.date),
+      author: post.author,
       short: post.html.substr(0, 280).replace(/<[^>]*>?/gm, "")
     };
   })
