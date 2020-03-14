@@ -13,7 +13,7 @@ const cwd = process.cwd();
 
 const posts = getMarkDowninDirectory(path.join(cwd, "posts/"));
 posts.forEach(post => {
-  // console.log(post.author);
+  // console.log(post.categories);
   if (post.author != undefined) {
     post.author[1] = post.author[0].replace(" ", "-");
   }
