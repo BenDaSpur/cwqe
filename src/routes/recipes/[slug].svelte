@@ -72,11 +72,11 @@
   </div>
   <p />
   <Row>
-    <Col>
+    <Col md="6">
       {@html post.html}
     </Col>
     {#if post.picture != ''}
-      <Col>
+      <Col md="6">
         <img src={post.picture} alt="recipe-photo" class="img-fluid" />
       </Col>
     {/if}

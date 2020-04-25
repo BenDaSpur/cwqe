@@ -35,10 +35,10 @@
 
 <div class="content">
   <Row>
-    <Col>
+    <Col md="6">
       {@html post.html}
     </Col>
-    <Col>
+    <Col md="6">
       <img
         class="thumbnail center-block img-fluid"
         src={post.picture}
