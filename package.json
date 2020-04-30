@@ -18,7 +18,7 @@
     "fs": "0.0.1-security",
     "gray-matter": "^4.0.2",
     "highlight.js": "^9.18.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "markdown-json": "^1.4.1",
     "marked": "^0.7.0",
     "polka": "next",
