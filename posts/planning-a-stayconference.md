@@ -1,5 +1,6 @@
 ---
-author: []
+author:
+- Rebecca Petersen
 categories: []
 title: Planning a StayConference
 date: 2020-05-07T07:00:00Z
