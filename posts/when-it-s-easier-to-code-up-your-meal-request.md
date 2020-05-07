@@ -1,6 +1,5 @@
 ---
-author:
-- Unknown
+author: []
 categories: []
 title: When It's Easier to Code up Your Meal Request
 date: 2020-05-07T06:00:00Z
