@@ -23,6 +23,7 @@ fields:
   label: Picture
   description: A picture for the post!
 pages:
+- authors/and-here-we-go-again.md
 - authors/ben-spurlock.md
 - authors/corissa-peck.md
 - authors/david-fackrell.md
