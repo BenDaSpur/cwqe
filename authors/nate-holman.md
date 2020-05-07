@@ -2,7 +2,7 @@
 author: []
 categories: []
 title: Nate Holman
-date: 
+date: 2020-05-07T06:00:00Z
 picture: "/Beauty and the Beast-75.jpg"
 
 ---
