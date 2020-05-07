@@ -13,34 +13,34 @@ If possible, I’d like a medium Papa Murphy’s Chicken Garlic Pizza. I checked
 
     If (!deliverService.Any() && !possibleToOrderPapaMurphys)
     {
-                  Console.WriteLine(“Naser, it’s leftovers for you.”);
-                  return;
+      Console.WriteLine(“Naser, it’s leftovers for you.”);
+      return;
     }
     if (possibleToOrderPapaMurphys)
     {
-    			if(!garlicChickenAvailable)
-    			{
-                                Console.WriteLine(“It’s cheese pizza for you.”);
-    			}
-    			else
-    			{
-                  				Console.WriteLine(“First choice available.”);
-    			}
+      if(!garlicChickenAvailable)
+      {
+        Console.WriteLine(“It’s cheese pizza for you.”);
+      }
+      else
+      {
+        Console.WriteLine(“First choice available.”);
+      }
     }
     
     if(!possibleToOrderPapaMurphys)
     {
-                  Console.WriteLine(“Naser, you took too long to respond and spent too much time writing this stupid pseudo-ish code that probably doesn’t work anyways, so you can have leftovers.”);
+      Console.WriteLine(“Naser, you took too long to respond and spent too much time writing this stupid pseudo-ish code that probably doesn’t work anyways, so you can have leftovers.”);
     }
     
     if (!deliveryService.Any())
     {
-                  Console.WriteLine(“Naser, the order was placed, but you’ll have to pick up your own food.”);
+      Console.WriteLine(“Naser, the order was placed, but you’ll have to pick up your own food.”);
     }
     
     else
     {
-                  Console.WriteLine(“Order has been placed.”);
-                  return;  
+      Console.WriteLine(“Order has been placed.”);
+      return;  
     }
     
