@@ -4,7 +4,7 @@ author:
 categories:
 - Sides
 title: Corissa's Cabbage Crap
-date: 2019-12-13T07:00:00Z
+date: 2019-12-13T07:00:00.000+00:00
 picture: "/cabbage.jpeg"
 
 ---
@@ -21,3 +21,13 @@ Recipe:
 * Pepper to taste
 
 Don't make the cabbage soggy! That's really the key to this recipe as other than that you'll use all of the ingredients to taste.
+
+**Variations**!
+
+You can use any sort of oil or vinegar you like for this. 
+
+Olive oil and balsamic vinegar
+
+Sesame oil and rice wine vinegar
+
+Any flavored oil + white vinegar
