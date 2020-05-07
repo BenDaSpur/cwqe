@@ -36,7 +36,7 @@
 </div>
 <Row>
   {#each posts as post}
-    <Card class="mb-3 col">
+    <Card class="mb-3 col-lg-4">
       <CardHeader>
         <a rel="prefetch" href="authors/{post.slug}">{post.title}</a>
       </CardHeader>
