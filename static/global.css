@@ -1,3 +1,6 @@
 img {
   image-orientation: from-image;
 }
+.navbar {
+  color: #66c2ff !important;
+}

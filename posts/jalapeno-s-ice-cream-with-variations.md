@@ -1,5 +1,6 @@
 ---
-author: []
+author:
+- Nate Holman
 categories:
 - Food
 title: JALAPENO'S ICE CREAM (WITH VARIATIONS)

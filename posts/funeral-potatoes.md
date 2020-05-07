@@ -1,5 +1,6 @@
 ---
-author: []
+author:
+- Nate Holman
 categories:
 - Food
 title: Funeral Potatoes
