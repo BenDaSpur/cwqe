@@ -8,23 +8,27 @@ fields:
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - type: datetime
   name: date
   label: date
+  config:
+    required: true
 - name: author
   type: tag_list
-  default: []
+  default:
+  - Unknown
   label: Author
   description: Author(s)
 - name: picture
   type: file
   config:
-    maxSize: 250
+    maxSize: 64
   label: Picture
   description: A picture for the post!
 pages:
 - authors/Naser.md
-- authors/and-here-we-go-again.md
 - authors/ben-spurlock.md
 - authors/corissa-peck.md
 - authors/david-fackrell.md
