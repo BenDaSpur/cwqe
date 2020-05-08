@@ -72,12 +72,17 @@
   </div>
   <p />
   <Row>
-    <Col md="6">
-      {@html post.html}
-    </Col>
     {#if post.picture != ''}
+      <Col md="6" class="recipe-content">
+        {@html post.html}
+      </Col>
+
       <Col md="6">
         <img src={post.picture} alt="recipe-photo" class="img-fluid" />
+      </Col>
+    {:else}
+      <Col md="12" class="recipe-content">
+        {@html post.html}
       </Col>
     {/if}
 

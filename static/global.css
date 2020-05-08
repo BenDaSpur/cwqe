@@ -4,3 +4,6 @@ img {
 .navbar {
   color: #66c2ff !important;
 }
+.recipe-content img {
+  max-width: 100%;
+}
