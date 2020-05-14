@@ -9,6 +9,9 @@
 </script>
 
 <script>
+  import { stores } from "@sapper/app";
+  const { page } = stores();
+  export let viewCategory = $page.query.category;
   export let posts;
   //sorted from new to old
   const sortedPosts = posts.sort(function(a, b) {
@@ -16,7 +19,22 @@
     b = new Date(b.date);
     return a > b ? -1 : a < b ? 1 : 0;
   });
-  // console.log(sortedPosts);
+  let finalPosts = [];
+  // If category in url is set
+  if (typeof viewCategory != "undefined") {
+    if (viewCategory != "all") {
+      for (var i = 0; i < posts.length; i++) {
+        var postCat = posts[i].categories.map(v => v.toLowerCase());
+        if (postCat.includes(viewCategory)) {
+          finalPosts.push(posts[i]);
+        }
+      }
+    } else {
+      finalPosts = posts;
+    }
+  } else {
+    finalPosts = posts;
+  }
 </script>
 
 <style>
@@ -33,7 +51,7 @@
 <h1>Recent posts</h1>
 
 <ul>
-  {#each sortedPosts as post}
+  {#each finalPosts as post}
     <!-- we're using the non-standard `rel=prefetch` attribute to
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of

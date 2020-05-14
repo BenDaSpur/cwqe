@@ -3,6 +3,7 @@ author:
 - Nate Holman
 categories:
 - Sides
+- Food
 title: Corissa's Cabbage Crap
 date: 2019-12-13T07:00:00.000+00:00
 picture: "/cabbage.jpeg"

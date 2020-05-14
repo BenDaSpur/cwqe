@@ -3,6 +3,7 @@ author:
 - Ben Spurlock
 categories:
 - Dessert
+- Food
 title: My famous pumpkin chocolate chip cookies!
 date: 2019-12-12T07:00:00Z
 picture: "/pccc.png"

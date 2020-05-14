@@ -39,10 +39,16 @@
       <UncontrolledDropdown nav inNavbar>
         <DropdownToggle nav caret>Recipes</DropdownToggle>
         <DropdownMenu right>
-          <DropdownItem rel="prefetch" href="recipes">Technical</DropdownItem>
-          <DropdownItem rel="prefetch" href="recipes">Food</DropdownItem>
+          <DropdownItem rel="preload" href="/recipes?category=technical">
+            Technical
+          </DropdownItem>
+          <DropdownItem rel="preload" href="/recipes?category=food">
+            Food
+          </DropdownItem>
           <DropdownItem divider />
-          <DropdownItem rel="prefetch" href="recipes">All</DropdownItem>
+          <DropdownItem rel="preload" href="/recipes?category=all">
+            All
+          </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
     </Nav>

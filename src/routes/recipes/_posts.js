@@ -12,7 +12,7 @@ import getMarkDowninDirectory from "./_getposts.js";
 const cwd = process.cwd();
 
 const posts = getMarkDowninDirectory(path.join(cwd, "posts/"));
-posts.forEach(post => {
+posts.forEach((post) => {
   // console.log(post.categories);
   if (post.author != undefined) {
     post.author[1] = post.author[0].replace(" ", "-");

@@ -4,6 +4,7 @@ author:
 categories:
 - Cookies
 - Dessert
+- Food
 title: Officially the best chocolate chip cookie
 date: 2020-03-27T06:00:00Z
 picture: "/choc_chip.jpg"

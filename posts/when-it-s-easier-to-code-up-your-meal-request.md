@@ -1,7 +1,8 @@
 ---
 author: 
 - Naser
-categories: []
+categories:
+- Technical
 title: When It's Easier to Code up Your Meal Request
 date: 2020-04-20T06:00:00Z
 picture: ''

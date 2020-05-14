@@ -4,7 +4,7 @@ author:
 categories:
 - Food
 title: JALAPENO'S ICE CREAM (WITH VARIATIONS)
-date: 
+date: 2020-05-07T06:00:00Z
 picture: "/rrr-sh-lemon-icecream.jpg"
 
 ---
