@@ -56,7 +56,7 @@
       <span class="float-md-right">
         Categories:
         {#each post.categories as cat}
-          <a href="/recipes/categories/{cat}">
+          <a href="/recipes?category={cat.toLowerCase()}">
             {@html cat}
           </a>
         {/each}

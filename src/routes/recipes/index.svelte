@@ -67,6 +67,17 @@
             {post.author[0]}
           </a>
         </div>
+        <div class="col-md-6 text-center">
+          <span class="float-md-right">
+            {#if post.categories.length > 1}Categories:{:else}Category:{/if}
+            {#each post.categories as cat}
+              <a href="/recipes?category={cat.toLowerCase()}">
+                {@html cat}
+              </a>
+            {/each}
+
+          </span>
+        </div>
       </div>
       <p>
         <!-- {post.date} -->
