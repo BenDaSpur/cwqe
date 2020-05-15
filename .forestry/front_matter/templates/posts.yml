@@ -5,6 +5,10 @@ fields:
 - type: list
   name: categories
   label: categories
+  config:
+    use_select: false
+    min: 1
+  description: Food or Technical?
 - type: text
   name: title
   label: title
