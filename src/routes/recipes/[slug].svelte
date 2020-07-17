@@ -79,7 +79,7 @@
       </Col>
 
       <Col md="6">
-        <img src={post.picture} alt="recipe-photo" class="img-fluid" />
+        <img src={post.picture} alt="" class="img-fluid" />
       </Col>
     {:else}
       <Col md="12" class="recipe-content">

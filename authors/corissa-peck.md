@@ -1,5 +1,6 @@
 ---
-author: []
+author:
+- Corissa Peck
 categories: []
 title: Corissa Peck
 date: 2020-02-21T07:00:00Z

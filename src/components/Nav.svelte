@@ -19,10 +19,6 @@
   function handleUpdate(event) {
     isOpen = event.detail.isOpen;
   }
-
-  function checkURL(event) {
-    console.log(window.location.href);
-  }
 </script>
 
 <style>
@@ -43,24 +39,27 @@
       <UncontrolledDropdown nav inNavbar>
         <DropdownToggle nav caret>Recipes</DropdownToggle>
         <DropdownMenu right>
-          <DropdownItem
-            on:click={checkURL}
-            rel="preload"
-            href="/recipes?category=technical">
-            Technical
+          <DropdownItem>
+            <NavLink
+              class="text-dark"
+              onclick="location.href='/recipes?category=technical'">
+              Technical
+            </NavLink>
           </DropdownItem>
-          <DropdownItem
-            on:click={checkURL}
-            rel="preload"
-            href="/recipes?category=food">
-            Food
+          <DropdownItem>
+            <NavLink
+              class="text-dark"
+              onclick="location.href='/recipes?category=food'">
+              Food
+            </NavLink>
           </DropdownItem>
           <DropdownItem divider />
-          <DropdownItem
-            on:click={checkURL}
-            rel="preload"
-            href="/recipes?category=all">
-            All
+          <DropdownItem>
+            <NavLink
+              class="text-dark"
+              onclick="location.href='/recipes?category=all'">
+              All
+            </NavLink>
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>

@@ -18,6 +18,7 @@ posts.forEach((post) => {
     post.author[1] = post.author[0].replace(" ", "-");
   }
   post.html = post.html.replace(/^\t{3}/gm, "");
+  post.picture = post.picture;
 });
 
 export default posts;

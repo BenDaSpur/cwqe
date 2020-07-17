@@ -1,11 +1,11 @@
 ---
 author:
-- Corrisa Peck
+- Corissa Peck
 categories:
 - Food
 title: Funeral Potatoes
 date: 2020-05-07T06:00:00Z
-picture: ''
+picture: '/potatoes-stock.jpg'
 
 ---
 Funeral potatoes are a hard recipe to nail down.  For me,  cooking in general can be a little more like Exploratory testing than scripted testing.  I have a basic idea of how something should work and then go and feel my way through it.
@@ -35,6 +35,6 @@ First - saute the onion in 4 TBS butter.  Add the boullion, garlic powder and bl
 
 Next - Add the flour and combine to make a paste.   You're basically making a Roux at this point. This always looks kind of wrong to me.  It's fine!  I promise!
 
-![](/00100lrPORTRAIT_00100_BURST20200412164302863_COVER.jpg)[Photos (1)-1.zip](/Photos (1)-1.zip "Photos (1)-1.zip")
+![](/00100lrPORTRAIT_00100_BURST20200412164302863_COVER.jpg)
 
 Mix the milk and sour cream and add slowly,  stirring constantly.   It may seem like it's not coming together - but it will!   As you cook it will come to a clam chowder consistency and look something like the picture below :

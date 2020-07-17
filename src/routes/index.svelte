@@ -10,8 +10,20 @@
 
 <script>
   export let posts;
-  import Col from "sveltestrap/src/Col.svelte";
-  import Row from "sveltestrap/src/Row.svelte";
+  import {
+    Col,
+    Row,
+    Button,
+    Card,
+    CardBody,
+    CardFooter,
+    CardHeader,
+    CardImg,
+    CardSubtitle,
+    CardText,
+    CardTitle,
+    Badge
+  } from "sveltestrap/src/";
 
   const sortedPosts = posts.sort(function(a, b) {
     a = new Date(a.date);
@@ -59,11 +71,42 @@
     <h4 class="display-4">Latest Posts</h4>
   </Col>
 </Row>
+<Row>
 
-{#each sortedPosts as post}
-  <Row>
-    <Col>
-      <a href="/recipes/{post.slug}">{post.title}</a>
+  {#each sortedPosts as post}
+    <Col md="3">
+      <Card class="mb-3">
+        <img src={post.image} class="card-img-top" />
+        <CardBody>
+          <CardSubtitle>
+            <strong>{post.title}</strong>
+          </CardSubtitle>
+          <CardText>
+            <a href="authors/{post.author[1].toLowerCase()}">
+              {post.author[0]}
+            </a>
+          </CardText>
+          <CardText>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </CardText>
+          {#each post.categories as tag}
+            <Badge
+              class="mr-1"
+              color="info"
+              href="/recipes?category={tag.toLowerCase()}">
+              {tag}
+            </Badge>
+          {/each}
+          <Badge />
+        </CardBody>
+        <CardFooter>
+          <a class="btn btn-outline-primary" href="/recipes/{post.slug}">
+            {post.title}
+          </a>
+        </CardFooter>
+      </Card>
+
     </Col>
-  </Row>
-{/each}
+  {/each}
+</Row>

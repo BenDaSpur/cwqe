@@ -6,7 +6,7 @@ categories:
 - Food
 title: The best cornbread!
 date: 2020-03-12T06:00:00Z
-picture: ''
+picture: '/cornbread.jpg'
 
 ---
 * 1 Cup Buttermilk
