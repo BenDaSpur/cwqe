@@ -76,7 +76,7 @@
   {#each sortedPosts as post}
     <Col md="3">
       <Card class="mb-3">
-        <img src={post.image} class="card-img-top" />
+        <img src={post.image} alt="" class="card-img-top" />
         <CardBody>
           <CardSubtitle>
             <strong>{post.title}</strong>
@@ -87,8 +87,7 @@
             </a>
           </CardText>
           <CardText>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            {@html post.short}
           </CardText>
           {#each post.categories as tag}
             <Badge
