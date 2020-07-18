@@ -105,7 +105,6 @@
           </a>
         </CardFooter>
       </Card>
-
     </Col>
   {/each}
 </Row>
