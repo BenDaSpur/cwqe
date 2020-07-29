@@ -51,7 +51,6 @@
   </Col>
   <Col>
     <h1 class="display-1">Cooking With QE</h1>
-
     <p>
       This site is dedicated to a simple idea. How can a few people spread
       quality recipes to others.
@@ -86,9 +85,9 @@
               {post.author[0]}
             </a>
           </CardText>
-          <CardText>
+          <!-- <CardText>
             {@html post.short}
-          </CardText>
+          </CardText> -->
           {#each post.categories as tag}
             <Badge
               class="mr-1"

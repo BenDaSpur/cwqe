@@ -40,9 +40,9 @@
     </Col>
     <Col md="6">
       <img
+        alt="author"
         class="thumbnail center-block img-fluid"
-        src={post.picture}
-        alt="picture of author" />
+        src={post.picture} />
     </Col>
   </Row>
 </div>
