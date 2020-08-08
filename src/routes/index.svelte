@@ -75,11 +75,13 @@
   {#each sortedPosts as post}
     <Col md="3">
       <Card class="mb-3">
-        <img
-          src={post.image}
-          loading="lazy"
-          alt=""
-          class="card-img-top post-image" />
+        <a href="recipes/{post.slug}">
+          <img
+            src={post.image}
+            loading="lazy"
+            alt=""
+            class="card-img-top post-image" />
+        </a>
         <CardBody>
           <CardSubtitle>
             <strong>{post.title}</strong>

@@ -54,23 +54,29 @@
     <div class="col">
       <Button outline {color} href="/recipes">Back to recipes</Button>
     </div>
-    <Share
-      {url}
-      title={post.title}
-      desc={'A recipe I found on QWQE called ' + post.title} />
+    <!-- Share container -->
+    <div class="col-md-6 mt-1">
+      <Share
+        {url}
+        title={post.title}
+        desc={'A recipe I found on QWQE called ' + post.title} />
+    </div>
   </div>
+  <!-- Post title -->
   <div class="row">
     <div class="col">
       <h1 class="title-name">{post.title}</h1>
     </div>
   </div>
+  <!-- Post Date -->
   <div class="row">
-    <div class="col-md-6 text-center">
+    <div class="col-md-6 text-left">
       <span class="float-md-left">
         {@html post.date.substring(0, post.date.indexOf('T'))}
       </span>
     </div>
-    <div class="col-md-6 text-center">
+    <!-- Post categories -->
+    <div class="col-md-6 text-left">
       <span class="float-md-right">
         Categories:
         {#each post.categories as cat}
@@ -78,12 +84,12 @@
             {@html cat}
           </a>
         {/each}
-
       </span>
     </div>
   </div>
+  <!-- Post Author -->
   <div class="row">
-    <div class="col-md-6 text-center">
+    <div class="col-md-6 text-left">
       <a href="/authors/{authorSlug}">
         <span class="float-md-left">{author}</span>
       </a>
@@ -96,6 +102,7 @@
         {@html post.html}
       </Col>
 
+      <!-- Post Main Picture -->
       <Col md="6">
         <Image src={imageUrl} alt="" class="img-fluid" />
       </Col>

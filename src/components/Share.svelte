@@ -17,7 +17,11 @@
 </script>
 
 <style>
-
+  @media only screen and (min-width: 751px) {
+    :global(.ssbc-button__link) {
+      float: right;
+    }
+  }
 </style>
 
 <Email subject={title} body="{desc} {url}" />
