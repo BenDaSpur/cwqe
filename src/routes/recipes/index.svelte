@@ -10,6 +10,8 @@
 
 <script>
   import { stores } from "@sapper/app";
+  import { Row, Col } from "sveltestrap/src/";
+  import Image from "svelte-image";
   const { page } = stores();
   export let viewCategory = $page.query.category;
   export let posts;
@@ -35,42 +37,22 @@
   } else {
     finalPosts = posts;
   }
+
+  let imageUrl;
 </script>
 
 <style>
-  ul {
-    margin: 0 0 1em 0;
-    line-height: 1.5;
-    list-style-type: none;
+  .post-image {
+    max-height: 150px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 1rem;
   }
-  @media only screen and (min-width: 751px) {
-    .post-image {
-      max-height: 130px;
-      text-align: center;
-      overflow: hidden;
-      margin-top: 1rem;
-    }
-    .post-image img {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-  @media only screen and (max-width: 750px) {
-    .post-image {
-      max-height: 200px;
-      text-align: center;
-      overflow: hidden;
-      margin-top: 1rem;
-      min-height: 175px;
-    }
-    .post-image img {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
+  :global(.post-image img) {
+    position: absolute;
+    /* left: 50%; */
+    /* top: 50%; */
+    transform: translate(0%, -21%);
   }
 </style>
 
@@ -78,50 +60,51 @@
   <title>Blog</title>
 </svelte:head>
 
-<h1>Recent posts</h1>
+<Row>
+  <Col>
+    <h1 class="display-4 text-center">Recent posts</h1>
+  </Col>
+</Row>
 
-<ul>
-  {#each finalPosts as post}
-    <!-- we're using the non-standard `rel=prefetch` attribute to
+{#each finalPosts as post}
+  <!-- we're using the non-standard `rel=prefetch` attribute to
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-    <li>
-      <div class="row my-3">
-        <div class="col-md-3 post-image">
-          {#if post.image != ''}
-            <img class="img-fluid" alt="recipe" src={post.image} />
-          {/if}
+
+  <div class="row my-3">
+    <div class="col-md-3 post-image">
+      {#if post.image != ''}
+        <Image alt="recipe" src={post.image} />
+      {/if}
+    </div>
+    <div class="col-md-8">
+      <a rel="prefetch" href="recipes/{post.slug}">{post.title}</a>
+      <div class="row">
+        <div class="col">{post.date.split('T')[0]}</div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a rel="prefetch" href="authors/{post.author[1].toLowerCase()}">
+            {post.author[0]}
+          </a>
         </div>
-        <div class="col-md-8">
-          <a rel="prefetch" href="recipes/{post.slug}">{post.title}</a>
-          <div class="row">
-            <div class="col">{post.date.split('T')[0]}</div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <a rel="prefetch" href="authors/{post.author[1].toLowerCase()}">
-                {post.author[0]}
+        <div class="col-md-6">
+          <span class="float-md-right">
+            {#if post.categories.length > 1}Categories:{:else}Category:{/if}
+            {#each post.categories as cat}
+              <a href="/recipes?category={cat.toLowerCase()}">
+                {@html cat.trim()}
               </a>
-            </div>
-            <div class="col-md-6 text-center">
-              <span class="float-md-right">
-                {#if post.categories.length > 1}Categories:{:else}Category:{/if}
-                {#each post.categories as cat}
-                  <a href="/recipes?category={cat.toLowerCase()}">
-                    {@html cat}
-                  </a>
-                {/each}
-              </span>
-            </div>
-          </div>
-          <p>
-            <!-- {post.date} -->
-            {@html post.short}
-            <a rel="prefetch" href="recipes/{post.slug}">Read More</a>
-          </p>
+            {/each}
+          </span>
         </div>
       </div>
-    </li>
-  {/each}
-</ul>
+      <p>
+        <!-- {post.date} -->
+        {@html post.short}
+        <a rel="prefetch" href="recipes/{post.slug}">Read More</a>
+      </p>
+    </div>
+  </div>
+{/each}

@@ -22,6 +22,20 @@
   import Col from "sveltestrap/src/Col.svelte";
   import Row from "sveltestrap/src/Row.svelte";
   import Button from "sveltestrap/src/Button.svelte";
+  import Share from "../../components/Share.svelte";
+  import Image from "svelte-image";
+
+  import { onMount } from "svelte";
+
+  let imageUrl = post.picture;
+
+  let url;
+
+  onMount(async () => {
+    url = window.location.href;
+  });
+
+  // export let url = window.location.href;
   const color = "primary";
 </script>
 
@@ -40,6 +54,10 @@
     <div class="col">
       <Button outline {color} href="/recipes">Back to recipes</Button>
     </div>
+    <Share
+      {url}
+      title={post.title}
+      desc={'A recipe I found on QWQE called ' + post.title} />
   </div>
   <div class="row">
     <div class="col">
@@ -79,7 +97,7 @@
       </Col>
 
       <Col md="6">
-        <img src={post.picture} alt="" class="img-fluid" />
+        <Image src={imageUrl} alt="" class="img-fluid" />
       </Col>
     {:else}
       <Col md="12" class="recipe-content">

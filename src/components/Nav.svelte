@@ -39,27 +39,21 @@
       <UncontrolledDropdown nav inNavbar>
         <DropdownToggle nav caret>Recipes</DropdownToggle>
         <DropdownMenu right>
-          <DropdownItem>
-            <NavLink
-              class="text-dark"
-              onclick="location.href='/recipes?category=technical'">
-              Technical
-            </NavLink>
+          <DropdownItem
+            class="text-dark"
+            onclick="location.href='/recipes?category=technical'">
+            Technical
           </DropdownItem>
-          <DropdownItem>
-            <NavLink
-              class="text-dark"
-              onclick="location.href='/recipes?category=food'">
-              Food
-            </NavLink>
+          <DropdownItem
+            class="text-dark"
+            onclick="location.href='/recipes?category=food'">
+            Food
           </DropdownItem>
           <DropdownItem divider />
-          <DropdownItem>
-            <NavLink
-              class="text-dark"
-              onclick="location.href='/recipes?category=all'">
-              All
-            </NavLink>
+          <DropdownItem
+            class="text-dark"
+            onclick="location.href='/recipes?category=all'">
+            All
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
