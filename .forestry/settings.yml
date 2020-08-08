@@ -2,24 +2,24 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/static/admin"
-webhook_url:
+webhook_url: 
 sections:
-  - type: document
-    path: src/routes/about/_about.md
-    label: About Page
-  - type: directory
-    path: authors
-    label: Authors
-    create: all
-    match: "**/*"
-  - type: directory
-    path: posts
-    label: Recipes
-    create: all
-    match: "**/*"
+- type: document
+  path: src/routes/about/_about.md
+  label: About Page
+- type: directory
+  path: authors
+  label: Authors
+  create: all
+  match: "**/*"
+- type: directory
+  path: posts
+  label: Recipes
+  create: all
+  match: "**/*"
 upload_dir: static
-public_path: ""
-front_matter_path: ""
+public_path: ''
+front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
