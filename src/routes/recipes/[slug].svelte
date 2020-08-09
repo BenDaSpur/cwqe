@@ -33,6 +33,11 @@
 
   onMount(async () => {
     url = window.location.href;
+
+    var aHref = document.querySelector(".recipe-content a");
+    if (aHref != null) {
+      aHref.setAttribute("rel", "external");
+    }
   });
 
   // export let url = window.location.href;
