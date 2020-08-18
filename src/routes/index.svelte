@@ -75,14 +75,13 @@
 <Row>
 
   {#each sortedPosts as post}
-    {#if post.image == ''}{(post.image = 'piggy.png')}{/if}
     <Col md="3">
       <Recipe
         slug={post.slug}
         title={post.title}
         categories={post.categories}
         author={post.author}
-        image={post.image} />
+        image={post.image == '' ? 'piggy.png' : post.image} />
     </Col>
   {/each}
 </Row>
