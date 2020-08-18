@@ -1,5 +1,4 @@
 <script>
-  // export let segment;
   import Button from "sveltestrap/src/Button.svelte";
   import Nav from "sveltestrap/src/Nav.svelte";
   import Navbar from "sveltestrap/src/Navbar.svelte";

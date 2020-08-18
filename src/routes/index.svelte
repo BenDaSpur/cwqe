@@ -24,6 +24,8 @@
     CardTitle,
     Badge
   } from "sveltestrap/src/";
+  import Image from "svelte-image";
+  import Recipe from "../components/Recipe.svelte";
 
   const sortedPosts = posts.sort(function(a, b) {
     a = new Date(a.date);
@@ -47,7 +49,7 @@
 
 <Row>
   <Col md="3">
-    <img class="img-fluid" src="piggy.png" alt="Mascot" />
+    <Image class="img-fluid" src="piggy.png" alt="Mascot" />
   </Col>
   <Col>
     <h1 class="display-1">Cooking With QE</h1>
@@ -73,43 +75,14 @@
 <Row>
 
   {#each sortedPosts as post}
+    {#if post.image == ''}{(post.image = 'piggy.png')}{/if}
     <Col md="3">
-      <Card class="mb-3">
-        <a href="recipes/{post.slug}">
-          <img
-            src={post.image}
-            loading="lazy"
-            alt=""
-            class="card-img-top post-image" />
-        </a>
-        <CardBody>
-          <CardSubtitle>
-            <strong>{post.title}</strong>
-          </CardSubtitle>
-          <CardText>
-            <a href="authors/{post.author[1].toLowerCase()}">
-              {post.author[0]}
-            </a>
-          </CardText>
-          <!-- <CardText>
-            {@html post.short}
-          </CardText> -->
-          {#each post.categories as tag}
-            <Badge
-              class="mr-1"
-              color="info"
-              href="/recipes?category={tag.toLowerCase()}">
-              {tag}
-            </Badge>
-          {/each}
-          <Badge />
-        </CardBody>
-        <CardFooter>
-          <a class="btn btn-outline-primary" href="/recipes/{post.slug}">
-            {post.title}
-          </a>
-        </CardFooter>
-      </Card>
+      <Recipe
+        slug={post.slug}
+        title={post.title}
+        categories={post.categories}
+        author={post.author}
+        image={post.image} />
     </Col>
   {/each}
 </Row>

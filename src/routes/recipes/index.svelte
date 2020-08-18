@@ -74,9 +74,9 @@
 
   <div class="row my-3">
     <div class="col-md-3 post-image">
-      {#if post.image != ''}
-        <Image alt="recipe" src={post.image} />
-      {/if}
+      {#if post.image == ''}{(post.image = 'piggy.png')}{/if}
+      <Image alt="recipe" src={post.image} />
+
     </div>
     <div class="col-md-8">
       <a rel="prefetch" href="recipes/{post.slug}">{post.title}</a>
@@ -93,7 +93,7 @@
           <span class="float-md-right">
             {#if post.categories.length > 1}Categories:{:else}Category:{/if}
             {#each post.categories as cat}
-              <a href="/recipes?category={cat.toLowerCase()}">
+              <a rel="external" href="/recipes?category={cat.toLowerCase()}">
                 {@html cat.trim()}
               </a>
             {/each}
