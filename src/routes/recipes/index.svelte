@@ -74,8 +74,8 @@
 
   <div class="row my-3">
     <div class="col-md-3 post-image">
-      {#if post.image == ''}{(post.image = 'piggy.png')}{/if}
-      <Image alt="recipe" src={post.image} />
+
+      <Image alt="recipe" src={post.image == '' ? 'piggy.png' : post.image} />
 
     </div>
     <div class="col-md-8">
