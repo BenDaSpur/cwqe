@@ -1,5 +1,6 @@
 ---
-author: []
+author:
+- Corissa Peck
 categories:
 - Technical
 title: These are a few of my favorite bugs - 2010 Reprint
