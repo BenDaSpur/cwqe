@@ -1,17 +1,18 @@
 <script>
-  import Button from "sveltestrap/src/Button.svelte";
-  import Nav from "sveltestrap/src/Nav.svelte";
-  import Navbar from "sveltestrap/src/Navbar.svelte";
-  import NavItem from "sveltestrap/src/NavItem.svelte";
-  import NavLink from "sveltestrap/src/NavLink.svelte";
-  import Container from "sveltestrap/src/Container.svelte";
-  import NavbarBrand from "sveltestrap/src/NavbarBrand.svelte";
-  import NavbarToggler from "sveltestrap/src/NavbarToggler.svelte";
-  import Collapse from "sveltestrap/src/Collapse.svelte";
-  import UncontrolledDropdown from "sveltestrap/src/UncontrolledDropdown.svelte";
-  import DropdownToggle from "sveltestrap/src/DropdownToggle.svelte";
-  import DropdownMenu from "sveltestrap/src/DropdownMenu.svelte";
-  import DropdownItem from "sveltestrap/src/DropdownItem.svelte";
+  import {
+    Button,
+    Nav,
+    Navbar,
+    NavItem,
+    NavLink,
+    NavbarBrand,
+    NavbarToggler,
+    Collapse,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem
+  } from "sveltestrap";
 
   let isOpen = false;
 

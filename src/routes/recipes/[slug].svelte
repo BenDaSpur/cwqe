@@ -16,12 +16,17 @@
 
 <script>
   export let post;
+  let author;
+  let authorSlug;
 
-  let author = post.author[0];
-  let authorSlug = post.author[1].toLowerCase();
-  import Col from "sveltestrap/src/Col.svelte";
-  import Row from "sveltestrap/src/Row.svelte";
-  import Button from "sveltestrap/src/Button.svelte";
+  if (post.author !== null) {
+    author = post.author[0];
+    authorSlug = post.author[1].toLowerCase();
+  } else {
+    author = "Unknown";
+  }
+
+  import { Col, Row, Button } from "sveltestrap";
   import Share from "../../components/Share.svelte";
   import Image from "svelte-image";
 
@@ -95,9 +100,12 @@
   <!-- Post Author -->
   <div class="row">
     <div class="col-md-6 text-left">
-      <a href="/authors/{authorSlug}">
-        <span class="float-md-left">{author}</span>
-      </a>
+      {#if author != 'Unknown'}
+        <a href="/authors/{authorSlug}">
+          <span class="float-md-left">{author}</span>
+        </a>
+      {:else}Unknown{/if}
+
     </div>
   </div>
   <p />
@@ -116,6 +124,5 @@
         {@html post.html}
       </Col>
     {/if}
-
   </Row>
 </div>

@@ -10,7 +10,7 @@
 
 <script>
   import { stores } from "@sapper/app";
-  import { Row, Col } from "sveltestrap/src/";
+  import { Row, Col } from "sveltestrap";
   import Image from "svelte-image";
   const { page } = stores();
   export let viewCategory = $page.query.category;
@@ -74,9 +74,7 @@
 
   <div class="row my-3">
     <div class="col-md-3 post-image">
-
       <Image alt="recipe" src={post.image == '' ? 'piggy.png' : post.image} />
-
     </div>
     <div class="col-md-8">
       <a rel="prefetch" href="recipes/{post.slug}">{post.title}</a>
@@ -85,9 +83,12 @@
       </div>
       <div class="row">
         <div class="col">
-          <a rel="prefetch" href="authors/{post.author[1].toLowerCase()}">
-            {post.author[0]}
-          </a>
+          {#if post.author !== null}
+            <a rel="prefetch" href="authors/{post.author[1].toLowerCase()}">
+              {post.author[0]}
+            </a>
+          {:else}Unknown{/if}
+
         </div>
         <div class="col-md-6">
           <span class="float-md-right">

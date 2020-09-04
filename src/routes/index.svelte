@@ -10,20 +10,7 @@
 
 <script>
   export let posts;
-  import {
-    Col,
-    Row,
-    Button,
-    Card,
-    CardBody,
-    CardFooter,
-    CardHeader,
-    CardImg,
-    CardSubtitle,
-    CardText,
-    CardTitle,
-    Badge
-  } from "sveltestrap/src/";
+  import { Col, Row } from "sveltestrap/src/";
   import Image from "svelte-image";
   import Recipe from "../components/Recipe.svelte";
 
@@ -42,10 +29,6 @@
 <svelte:head>
   <title>Cooking With QE</title>
 </svelte:head>
-
-<Row>
-  <Col />
-</Row>
 
 <Row>
   <Col md="3">
@@ -73,14 +56,13 @@
   </Col>
 </Row>
 <Row>
-
   {#each sortedPosts as post}
-    <Col md="3">
+    <Col lg={3} sm={6}>
       <Recipe
         slug={post.slug}
         title={post.title}
         categories={post.categories}
-        author={post.author}
+        author={post.author === null ? ['Unknown', 'unknown'] : post.author}
         image={post.image == '' ? 'piggy.png' : post.image} />
     </Col>
   {/each}

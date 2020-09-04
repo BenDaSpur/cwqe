@@ -24,12 +24,26 @@
     object-fit: cover;
     overflow: hidden;
   }
+  @media only screen and (min-width: 751px) {
+    :global(.card-img-top) {
+      height: 250px;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    :global(.card-img-container) {
+      max-height: 200px;
+      overflow: hidden;
+    }
+    :global(.card-img-top) {
+      transform: translateY(-30%) !important;
+    }
+  }
 </style>
 
 <Card class="mb-3">
-
-  <Image src={image_src} alt="" class="card-img-top" height="250px" />
-
+  <div class="card-img-container">
+    <Image src={image_src} alt="" class="card-img-top" />
+  </div>
   <CardBody>
     <CardSubtitle>
       <a class="text-dark font-weight-bold" href="recipes/{slug}">
