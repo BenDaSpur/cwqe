@@ -72,7 +72,7 @@
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
 
-  <div class="row my-3">
+  <div class="row my-3 recipe-row">
     <div class="col-md-3 post-image">
       <Image alt="recipe" src={post.image == '' ? 'piggy.png' : post.image} />
     </div>
