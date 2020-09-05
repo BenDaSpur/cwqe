@@ -51,7 +51,9 @@
       </a>
     </CardSubtitle>
     <CardText>
-      <a href="authors/{author[1].toLowerCase()}">{author[0]}</a>
+      {#if author[0] != 'Unknown'}
+        <a href="authors/{author[1].toLowerCase()}">{author[0]}</a>
+      {:else}Unkown{/if}
     </CardText>
 
     {#each categories as tag}

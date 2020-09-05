@@ -83,7 +83,7 @@
       </div>
       <div class="row">
         <div class="col">
-          {#if post.author !== null}
+          {#if post.author !== null && post.author[0] != 'Unknown'}
             <a rel="prefetch" href="authors/{post.author[1].toLowerCase()}">
               {post.author[0]}
             </a>
