@@ -12,8 +12,8 @@ import getMarkDowninDirectory from "./_getposts.js";
 const cwd = process.cwd();
 
 const posts = getMarkDowninDirectory(path.join(cwd, "authors/"));
-posts.forEach(post => {
-  // console.log(post.picture);
+posts.forEach((post) => {
+  post.slug = post.slug.toLowerCase();
   post.html = post.html.replace(/^\t{3}/gm, "");
   post.img = post.picture;
 });
