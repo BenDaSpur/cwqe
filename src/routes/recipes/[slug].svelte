@@ -59,70 +59,66 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<div class="content">
-  <div class="row mb-5">
-    <div class="col">
-      <Button outline {color} href="/recipes">Back to recipes</Button>
-    </div>
-    <!-- Share container -->
-    <div class="col-md-6 mt-1">
-      <Share
-        {url}
-        title={post.title}
-        desc={'A recipe I found on QWQE called ' + post.title} />
-    </div>
-  </div>
-  <!-- Post title -->
-  <div class="row">
-    <div class="col">
-      <h1 class="title-name">{post.title}</h1>
-    </div>
-  </div>
-  <!-- Post Date -->
-  <div class="row">
-    <div class="col-md-6 text-left">
-      <span class="float-md-left">
-        {@html post.date.substring(0, post.date.indexOf('T'))}
-      </span>
-    </div>
-    <!-- Post categories -->
-    <div class="col-md-6 text-left">
-      <span class="float-md-right">
-        Categories:
-        {#each post.categories as cat}
-          <a href="/recipes?category={cat.toLowerCase()}">
-            {@html cat}
-          </a>
-        {/each}
-      </span>
-    </div>
-  </div>
-  <!-- Post Author -->
-  <div class="row">
-    <div class="col-md-6 text-left">
-      {#if author != 'Unknown'}
-        <a href="/authors/{authorSlug}">
-          <span class="float-md-left">{author}</span>
+<Row>
+  <Col>
+    <Button outline {color} href="/recipes">Back to recipes</Button>
+  </Col>
+  <!-- Share container -->
+  <Col md={6} class="mt-1">
+    <Share
+      {url}
+      title={post.title}
+      desc={'A recipe I found on QWQE called ' + post.title} />
+  </Col>
+</Row>
+<!-- Post title -->
+<Row class="my-4">
+  <Col>
+    <h1 class="title-name display-4">{post.title}</h1>
+  </Col>
+</Row>
+<!-- Post Date -->
+<Row>
+  <Col md={6} class="text-left">
+    <span class="float-md-left">
+      {@html post.date.substring(0, post.date.indexOf('T'))}
+    </span>
+  </Col>
+  <!-- Post categories -->
+  <Col md={6} class="text-left">
+    <span class="float-md-right">
+      Categories:
+      {#each post.categories as cat}
+        <a href="/recipes?category={cat.toLowerCase()}">
+          {@html cat}
         </a>
-      {:else}Unknown{/if}
+      {/each}
+    </span>
+  </Col>
+</Row>
+<!-- Post Author -->
+<Row>
+  <Col md={6} class="text-left">
+    {#if author != 'Unknown'}
+      <a href="/authors/{authorSlug}">
+        <span class="float-md-left">{author}</span>
+      </a>
+    {:else}Unknown{/if}
+  </Col>
+</Row>
+<Row class="mt-3">
+  {#if post.picture != ''}
+    <Col md="6" class="recipe-content bg-light p-4">
+      {@html post.html}
+    </Col>
 
-    </div>
-  </div>
-  <p />
-  <Row>
-    {#if post.picture != ''}
-      <Col md="6" class="recipe-content">
-        {@html post.html}
-      </Col>
-
-      <!-- Post Main Picture -->
-      <Col md="6">
-        <Image src={imageUrl} alt="" class="img-fluid" />
-      </Col>
-    {:else}
-      <Col md="12" class="recipe-content">
-        {@html post.html}
-      </Col>
-    {/if}
-  </Row>
-</div>
+    <!-- Post Main Picture -->
+    <Col md="6">
+      <Image src={imageUrl} alt="" class="img-fluid" />
+    </Col>
+  {:else}
+    <Col md="12" class="recipe-content bg-light p-4">
+      {@html post.html}
+    </Col>
+  {/if}
+</Row>

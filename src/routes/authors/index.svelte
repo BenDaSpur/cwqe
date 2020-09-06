@@ -10,17 +10,19 @@
 
 <script>
   export let posts;
-  import Col from "sveltestrap/src/Col.svelte";
-  import Row from "sveltestrap/src/Row.svelte";
-  import Button from "sveltestrap/src/Button.svelte";
-  import Card from "sveltestrap/src/Card.svelte";
-  import CardBody from "sveltestrap/src/CardBody.svelte";
-  import CardFooter from "sveltestrap/src/CardFooter.svelte";
-  import CardHeader from "sveltestrap/src/CardHeader.svelte";
-  import CardImg from "sveltestrap/src/CardImg.svelte";
-  import CardSubtitle from "sveltestrap/src/CardSubtitle.svelte";
-  import CardText from "sveltestrap/src/CardText.svelte";
-  import CardTitle from "sveltestrap/src/CardTitle.svelte";
+  import {
+    Col,
+    Row,
+    Button,
+    Card,
+    CardBody,
+    CardFooter,
+    CardHeader,
+    CardImg,
+    CardSubtitle,
+    CardText,
+    CardTitle
+  } from "sveltestrap";
   const color = "primary";
 </script>
 
@@ -36,26 +38,28 @@
 </div>
 <Row>
   {#each posts as post}
-    <Card class="mb-3 col-lg-4">
-      <CardHeader>
-        <a rel="prefetch" href="authors/{post.slug}">{post.title}</a>
-      </CardHeader>
-      <CardBody>
-        <CardSubtitle />
-        <CardImg
-          src={post.img}
-          class="thumbnail center-block img-fluid"
-          style="max-height:300px; width: inherit !important;" />
-        <CardText>
-          {@html post.short}
-        </CardText>
-        <!-- <Button>Button</Button> -->
-      </CardBody>
-      <CardFooter>
-        <Button {color} rel="prefetch" href="authors/{post.slug}">
-          Read More
-        </Button>
-      </CardFooter>
-    </Card>
+    <Col md={12} lg={6} xl={3}>
+      <Card class="mb-3">
+        <CardHeader>
+          <a rel="prefetch" href="authors/{post.slug}">{post.title}</a>
+        </CardHeader>
+        <CardBody>
+          <CardSubtitle />
+          <CardImg
+            src={post.img}
+            class="thumbnail center-block img-fluid"
+            style="max-height:300px; width: inherit !important;" />
+          <CardText>
+            {@html post.short}
+          </CardText>
+          <!-- <Button>Button</Button> -->
+        </CardBody>
+        <CardFooter>
+          <Button {color} rel="prefetch" href="authors/{post.slug}">
+            Read More
+          </Button>
+        </CardFooter>
+      </Card>
+    </Col>
   {/each}
 </Row>
