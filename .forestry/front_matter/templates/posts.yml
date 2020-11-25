@@ -32,33 +32,12 @@ fields:
   label: Picture
   description: A picture for the post!
 pages:
-- authors/Naser.md
 - authors/ben-spurlock.md
-- authors/corissa-peck.md
-- authors/david-fackrell.md
-- authors/david-hampton.md
-- authors/edward-howard.md
-- authors/jira-rice.md
-- authors/miguel-rojas.md
-- authors/nate-holman.md
-- authors/rebecca-petersen.md
-- posts/bbq-meatballs.md
 - posts/chocolate-chip-banana-bread.md
-- posts/come-to-the-dark-side-we-have-cookies.md
-- posts/corissa-s-cabbage-crap.md
-- posts/exploratory-testing-2010-reprint.md
-- posts/funeral-potatoes.md
-- posts/jalapeno-s-ice-cream-with-variations.md
 - posts/my-famous-pumpkin-chocolate-chip-cookies.md
 - posts/officially-the-best-chocolate-chip-cookie.md
 - posts/overnight-waffles.md
-- posts/papa-a-la-huancaina.md
-- posts/planning-a-stayconference.md
-- posts/stray-cats-and-the-cat-lady-2010-reprint.md
 - posts/the-best-cornbread.md
 - posts/the-only-pancake-recipe-you-need.md
-- posts/these-are-a-few-of-my-favorite-bugs-2010-reprint.md
 - posts/vanilla-bean-syrup.md
-- posts/what-s-with-all-of-the-pigs.md
 - posts/what-technology-did-we-use-for-this-site.md
-- posts/when-it-s-easier-to-code-up-your-meal-request.md
