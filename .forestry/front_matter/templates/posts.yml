@@ -33,6 +33,7 @@ fields:
   description: A picture for the post!
 pages:
 - authors/ben-spurlock.md
+- posts/banana-bars.md
 - posts/chocolate-chip-banana-bread.md
 - posts/my-famous-pumpkin-chocolate-chip-cookies.md
 - posts/officially-the-best-chocolate-chip-cookie.md
