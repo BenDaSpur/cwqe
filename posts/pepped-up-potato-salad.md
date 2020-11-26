@@ -9,14 +9,14 @@ date: 2020-11-25T00:00:00-07:00
 picture: "/potatoes-stock.jpg"
 
 ---
-* Another boost to a recipe that so many people already have. I present the new recipe that you will need when you want to make the best potato salad. This features using soaked mustard and celery seed. This gives such great flavor!
+Another boost to a recipe that so many people already have. I present the new recipe that you will need when you want to make the best potato salad. This features using soaked mustard and celery seed. This gives such great flavor!
 
-  Soak overnight:
+Soak overnight:
 * 1 1/2 tsp mustard seed
 * 1 tsp celery seed
 * 3 Tbls vinegar
 
-  Rest of ingredients:
+Rest of ingredients:
 * 1 1/2 tsp salt
 * 1/2 cup finely chopped green onions & tops
 * 5 cups diced cooked potatoes
