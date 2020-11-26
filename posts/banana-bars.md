@@ -7,7 +7,7 @@ categories:
 - Dessert
 title: Banana Bars
 date: 2020-11-24T00:00:00-07:00
-picture: ''
+picture: "/pexels-renata-brant-2116020.jpg"
 
 ---
 The best recipe for ripe bananas and wanting to create a sheet cake!
