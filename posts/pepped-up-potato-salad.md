@@ -6,7 +6,7 @@ categories:
 - Side
 title: Pepped Up Potato Salad
 date: 2020-11-25T00:00:00-07:00
-picture: "/potatoes_spinning_slow.mov"
+picture: "/potatoes-stock.jpg"
 
 ---
 * Another boost to a recipe that so many people already have. I present the new recipe that you will need when you want to make the best potato salad. This features using soaked mustard and celery seed. This gives such great flavor!
