@@ -2,8 +2,8 @@
 author:
 - Ben Spurlock
 categories:
-- Side
 - Food
+- Side
 title: Pepped Up Potato Salad
 date: 2020-11-25T00:00:00-07:00
 picture: "/potatoes_spinning_slow.mov"
