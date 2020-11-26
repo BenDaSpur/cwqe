@@ -16,6 +16,7 @@ picture: "/potatoes-stock.jpg"
 * 1 tsp celery seed
 * 3 Tbls vinegar
 
+  Rest of ingredients:
 * 1 1/2 tsp salt
 * 1/2 cup finely chopped green onions & tops
 * 5 cups diced cooked potatoes
