@@ -31,6 +31,26 @@ fields:
     maxSize: 64
   label: Picture
   description: A picture for the post!
+- name: read-time
+  type: number
+  description: How many minutes of a read
+  default: 0
+  required: true
+  config:
+    min: 5
+    max: 
+    step: 
+    required: false
+  label: read-time
+- name: ingredients
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Ingredients
 pages:
 - authors/ben-spurlock.md
 - posts/banana-bars.md
